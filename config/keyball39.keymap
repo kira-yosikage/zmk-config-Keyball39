@@ -38,14 +38,6 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        tri_layer {
-            if-layers = <NUMARW SYM>;
-            then-layer = <FN>;
-        };
-    };
 
     keymap {
         compatible = "zmk,keymap";
