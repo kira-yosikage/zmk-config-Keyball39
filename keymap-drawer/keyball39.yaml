@@ -41,18 +41,18 @@ layers:
   - NUMARW
   - $$mdi:keyboard-esc$$
   NUMARW:
-  - none
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F2
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-up-bold$$
-  - '&LPAR'
+  - (
   - )
   - {t: '-', s: _}
   - $$mdi:keyboard-tab$$
-  - none
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
@@ -61,8 +61,8 @@ layers:
   - $$mdi:arrow-right-bold$$
   - PG DN
   - none
-  - none
-  - none
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
@@ -71,8 +71,8 @@ layers:
   - none
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '0', s: )}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
