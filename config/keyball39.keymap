@@ -47,17 +47,17 @@
             bindings = <
 &kp Q      &kp W     &kp E    &kp R    &kp T                              &kp Y     &kp U     &kp I     &kp O        &kp P
 &kp A      &kp S     &kp D    &kp F    &kp G                              &kp H     &kp J     &kp K     &kp L        &kp ENTER
-&kp Z      &kp X     &kp C    &kp V    &kp B                              &tog FN      &kp N     &kp M  &tog SCROLL  &kp RSHFT
-&kp LGUI  &kp LALT  &kp LCTRL  &kp SPACE  &mo NUMARW  &mo SYM  &kp BSPC    &mo NUMARW   &kp ESC
+&kp Z      &kp X     &kp C    &kp V    &kp B                              &mo FN      &kp N     &kp M  &mkp LCLK  &kp RSHFT
+&kp LCTRL  &kp LGUI  &kp LALT  &kp SPACE  &mo NUMARW  &mo SYM  &kp BSPC    &mo NUMARW   &mkp RCLK
             >;
         };
 
         numarw_layer {
             label = "NUMARW";
             bindings = <
-&none  &kp F2  &kp N1  &kp N2  &kp N3                          &none     &kp UP    &kp LPAR      &kp RPAR  &kp MINUS
+&kp ESC  &kp F2  &kp N1  &kp N2  &kp N3                          &none     &kp UP    &kp LPAR      &kp LPAR  &kp RPAR
 &kp TAB  &none  &kp N4 &kp N5  &kp N6                      &kp LEFT  &kp DOWN  &kp RIGHT  &kp PG_DN  &none
-&none  &none  &kp N7  &kp N8     &kp N9                         &none   &none  &none    &none      &none
+&none  &none  &kp N7  &kp N8     &kp N9                         &none   &none  &none    &kp DOT      &SLASH
 &none  &none  &kp N0  &trans     &trans        &trans     &trans   &trans    &trans
             >;
         };
@@ -65,7 +65,7 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                     &kp CARET  &kp AMPS  &kp STAR   &kp LPAR  &kp RPAR
+&kp EXCL   &kp AT     &kp HASH  &kp DLLR  &kp PRCNT                     &kp CARET  &kp AMPS  &kp LPAR   &kp RPAR  &kp MINUS
 &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH                      &kp GRAVE  &kp SQT   &kp SEMI   &kp LT    &kp GT
 &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE                      &kp TILDE  &kp DQT   &kp COLON  &kp DOT   &kp SLASH
 &trans     &trans     &trans    &trans    &trans    &trans     &trans   &trans     &trans
@@ -77,7 +77,7 @@
             bindings = <
 &kp F1       &kp F2      &kp F3  &kp F4  &kp F5                         &kp F6        &kp F7        &kp F8        &kp F9        &kp F10
 &kp F11      &kp F12     &none   &none   &none                          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR
-&bootloader  &sys_reset  &none   &none   &none                          &tog FN  &none         &none         &none         &Hiragana
+&bootloader  &sys_reset  &none   &none   &none                          &mo FN  &none         &none         &none         &Hiragana
 &trans       &trans      &trans  &trans  &trans   &trans     &trans     &trans        &trans
             >;
         };
@@ -97,7 +97,7 @@
             bindings = <
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans       &trans
-&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &tog SCROLL       &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans  &trans  &trans       &trans
 &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans  &trans
             >;
         };
